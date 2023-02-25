@@ -14,7 +14,6 @@
             background-color: aqua;
             margin: 0;
             padding: 0;
-            height: 100%;
         }
 
         #content-box {
@@ -65,6 +64,28 @@
         td {
             border: 1px solid green;
         }
+
+        form {
+            margin-top: calc(5% - 70px);
+        }
+
+        .labels {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .labels > label {
+            margin-bottom: 6px;
+        }
+
+        .buttonContainer {
+            margin: 12px;
+        }
+
+        #button {
+            padding: 8px;
+            height: 36px;
+        }
     </style>
     <title>Document</title>
 </head>
@@ -100,6 +121,31 @@
             <td>Valor 2</td>
         </tr>
     </table>
+
+    <form method="post">
+        <div class="labels">
+            <label for="name">Name:</label>
+            <input type="text" id="text" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="labels">
+            <label for="email">Email: <br></label>
+            <input type="text" id="email" placeholder="Digite seu email" required>
+        </div>
+
+        <div class="labels">
+            <label for="password">Password: <br></label>
+            <input type="password" id="password" placeholder="Digite sua senha" required>
+        </div>
+
+        <div class="labels">
+            <label for="nascimento">Nascimento: <br></label>
+            <input type="date" id="nascimento" placeholder="Data de nascimento" required>
+        </div>
+        <div class="buttonContainer">
+            <button id="button" type="submit">Enviar mensagem</button>
+        </div>
+    </form>
 </body>
 
 </html>
