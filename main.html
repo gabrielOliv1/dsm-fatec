@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+        }
+
+        #content-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            height: fit-content;
+            padding: 12px;
+            margin-top: 16px;
+            border: 1px solid black;
+            border-radius: 8px;
+        }
+
+        #content-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            margin: 0 auto;
+        }
+
+        .running-text {
+            margin: 32px;
+            width: 100%;
+            font-weight: 600;
+        }
+
+        section {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        img {
+            width: 600px;
+            height: 600px;
+            border-radius: 12px;
+        }
+
+        table {
+            border: 1px solid red;
+        }
+
+        td {
+            border: 1px solid green;
+        }
+
+        form {
+            margin-top: calc(5% - 70px);
+        }
+
+        .labels {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .labels > label {
+            margin-bottom: 6px;
+        }
+
+        .buttonContainer {
+            margin: 12px;
+        }
+
+        #button {
+            padding: 8px;
+            height: 36px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div id="content-box">
+            <h1>
+                <acronym id="acronym" title="HiperText Markup Language">
+                    HTML
+                </acronym>
+            </h1>
+            <div id="content-section">
+                <p>Primeiro parágrafo e tals<br>Segundo parágrafo e tals</p>
+                <i>Texto em itálico</i>
+                <p>H<sub>2</sub>O</p>
+                <p>2<sup>2</sup></p>
+            </div>
+
+        </div>
+    </div>
+    <div class="running-text">
+        <marquee behavior="alternate">Texto passando</marquee>
+    </div>
+    <section>
+        <img src="./images/image1.jpg" alt="Pessoa 1">
+        <img src="./images/image2.jpg" alt="Pessoa 2">
+    </section>
+
+    <table class="table-border">
+        <tr>
+            <td>Valor 1</td>
+            <td>Valor 2</td>
+        </tr>
+    </table>
+
+    <form method="post">
+        <div class="labels">
+            <label for="name">Name:</label>
+            <input type="text" id="text" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="labels">
+            <label for="email">Email: <br></label>
+            <input type="text" id="email" placeholder="Digite seu email" required>
+        </div>
+
+        <div class="labels">
+            <label for="password">Password: <br></label>
+            <input type="password" id="password" placeholder="Digite sua senha" required>
+        </div>
+
+        <div class="labels">
+            <label for="nascimento">Nascimento: <br></label>
+            <input type="date" id="nascimento" placeholder="Data de nascimento" required>
+        </div>
+        <div class="buttonContainer">
+            <button id="button" type="submit">Enviar mensagem</button>
+        </div>
+    </form>
+</body>
+
+</html>
