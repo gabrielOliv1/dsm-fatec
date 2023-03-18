@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 12px;
+}
+
+.box {
+    border: 1px solid black;
+    background-color: antiquewhite;
+    padding: 12px;
+}
+
+.container .box {
+    flex: 1;
+}
+
+.container .box:nth-child(2) {
+    flex: 2;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+}
