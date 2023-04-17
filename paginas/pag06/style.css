@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+.body-content::-webkit-scrollbar {
+    width: 8px;
+    background-color: #CCCCCC;
+}
+
+.body-content::-webkit-scrollbar-thumb {
+    background: #205c74;
+    border-radius: 8px;
+}
+
 .carousel-item img {
     width: 100%;
     height: auto;
